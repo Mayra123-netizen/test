@@ -18,4 +18,5 @@ class Item(models.Model):
     itemname= models.CharField(max_length=255)
     description = models.CharField(max_length=900)
     itemproducer= models.ForeignKey(Seller, on_delete=models.CASCADE,null=True)
+    createdat=models.DateTimeField(auto_now_add=True)
     
